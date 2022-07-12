@@ -106,8 +106,8 @@ function movePaddle() {
 
 // Move ball on canvas
 function moveBall() {
-  // ball.x += ball.dx;
-  // ball.y += ball.dy;
+  ball.x += ball.dx;
+  ball.y += ball.dy;
 
   // Wall collision (right/left)
   if (ball.x + ball.size > canvas.width || ball.x - ball.size < 0) {
